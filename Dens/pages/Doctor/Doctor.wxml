@@ -1,0 +1,33 @@
+0<!--pages/Doctor/Doctor.wxml-->
+<view class="container">
+  <view class="card">
+    <view class="imgBx">
+      <image src="{{url}}"></image>
+    </view>
+    <view class="content">
+      <text>Doctor Card</text>
+      <view></view>
+      <text>One who is skilled in and licensed to practice the prevention, diagnosis, and treatment of diseases, injuries, and malformations of the teeth, jaws, and mouth and who makes and inserts false teeth</text>
+    </view>
+  </view>
+  <view class="card">
+    <view class="imgBx">
+      <image src="./OIP-C.jpg"></image>
+    </view>
+    <view class="content">
+      <text>Doctor Card</text>
+      <view></view>
+      <text>Two who is skilled in and licensed to practice the prevention, diagnosis, and treatment of diseases, injuries, and malformations of the teeth, jaws, and mouth and who makes and inserts false teeth</text>
+    </view>
+  </view>
+  <view class="card">
+    <view class="imgBx">
+      <image src="./OIP-D.jpg"></image>
+    </view>
+    <view class="content">
+      <text>Doctor Card</text>
+      <view></view>
+      <text>Three who is skilled in and licensed to practice the prevention, diagnosis, and treatment of diseases, injuries, and malformations of the teeth, jaws, and mouth and who makes and inserts false teeth</text>
+    </view>
+  </view>
+</view>

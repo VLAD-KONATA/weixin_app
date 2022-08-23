@@ -1,0 +1,63 @@
+<!--pages/reserve/reserve.wxml-->
+<view class="head">
+  <van-search value="{{ value }}" placeholder="请输入搜索关键词" />
+</view>
+<view class="cu-list menu-avatar padding-top-xs">
+  <view class="cu-item" wx:for="{{Doctorlist}}" we:key="Id">
+    <view class="mei" style="border-radius: 3%; box-shadow: 0px 0px 10px rgb(100, 97, 97); position: relative; left: 4rpx; top: 0rpx">
+      <view class="cu-avatar radius lg" style="background-image:url({{item.Img}});background-size: 130%;border-radius: 50%;"></view>
+      <van-popup show="{{ reshow }}" bind:close="reonClose">{{item.Id}}</van-popup>
+      <view class="content">
+        <view>
+          <text decode="true" class="text-cut">{{item.Name}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主治医师&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+          <text style="color: rgb(147, 194, 175);">预约挂号</text>
+        </view>
+        <view class="text-gray text-sm flex">
+          <text class="text-cut" style="font-size:16rpx;">{{item.Position}}
+          </text>
+    
+          <!-- <view style="position: relative; width: 96rpx; background: #d3d3d3; height: 34rpx; display: block; box-sizing: border-box; left: 4rpx; top: 50rpx"></view>
+            
+                      <view style="position: relative; width: 96rpx; background: #d3d3d3; height: 34rpx; display: block; box-sizing: border-box; left: 130rpx; top: 16rpx"></view>
+            
+                      <view style="position: relative; width: 96rpx; background: #d3d3d3; height: 34rpx; display: block; box-sizing: border-box; left: 256rpx; top: -18rpx"></view>
+            
+                      <view style="position: relative; width: 96rpx; background: #d3d3d3; height: 34rpx; display: block; box-sizing: border-box; left: 0rpx; top: -184rpx"></view>-->
+    
+          <!-- <view style="position: relative; width: 256rpx; background: #d3d3d3; height: 34rpx; display: block; box-sizing: border-box; left: 0rpx; top: -184rpx"></view>  -->
+        </view>
+        <view class="text-gray text-sm flex">
+          <!-- <text class="text-cut">{{item.Introduce}}</text> -->
+          <!-- <view class="gs">
+                            <van-icon class="token" data-id="{{item.Id}}" bindtap="konwSpec" name="comment-o"></van-icon>
+                            ...
+                            <van-icon name="clock-o" size="16px" bindtap="showup" />
+                          </view> -->
+    
+    
+        </view>
+      </view>
+    
+      <view style="position: relative; width: 70rpx; height: 29rpx; display: block; box-sizing: border-box; left: 144rpx; top: 62rpx">
+        <text decode="true" style="color:rgb(147, 194, 175)">111</text>
+      </view>
+    
+      <view style="position: relative; width: 70rpx; height: 29rpx; display: block; box-sizing: border-box; left: 74rpx; top: 90rpx">
+        <text decode="true" style="font-size: 20rpx;opacity: 0.4;">问诊量</text>
+      </view>
+    
+      <view style="position: relative; width: 374rpx; height: 60rpx; display: block; box-sizing: border-box; left: 5rpx; top: -78rpx">
+        <text decode="true" style="color: rgb(147, 194, 175);font-size: 22rpx;" bindtap="reshowPopup">预约挂号&nbsp;&nbsp;</text>
+        <text decode="true" style="color: rgb(147, 194, 175);font-size: 22rpx;">在线咨询&nbsp;&nbsp;</text>
+        <text style="color: rgb(147, 194, 175);font-size: 22rpx;">电话咨询</text>
+      </view>
+    </view>
+    <view style="height: 40rpx;"></view>
+  </view>
+</view>
+<view style="height: 70rpx;"></view>
+<view class="solids-bottom padding-xs flex align-center">
+  <view class="flex-sub text-center">
+    <view class="padding">到底了~~~</view>
+  </view>
+</view>

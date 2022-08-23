@@ -1,0 +1,9 @@
+
+{ "usingComponents": {
+   "van-circle": "/miniprogram_npm/@vant/weapp/circle/index",
+   "van-popup": "@vant/weapp/popup/index",
+  "van-tabber-item": "/miniprogram_npm/@vant/weapp/tabbar-item/index" ,
+  "van-cell":"/miniprogram_npm/@vant/weapp/cell/index",
+  "van-tabber":"/miniprogram_npm/@vant/weapp/tabbar/index",
+  "van-icon":"/miniprogram_npm/@vant/weapp/icon/index",
+  "van-calender":"/miniprogram_npm/@vant/weapp/calendar/index"} }

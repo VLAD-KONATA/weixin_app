@@ -1,0 +1,66 @@
+/* pages/Doctor/Doctor.wxss */
+
+page{
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #16384c;
+}
+.container{
+  position: relative;
+  width: 1000rpx;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30rpx;
+}
+.container .card{
+  position: relative;
+  max-width: 430rpx;
+  height: 300rpx;
+  background: #fff;
+  margin: 30rpx 10rpx;
+  padding: 20rpx 15rpx;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5rpx 202rpx rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.container .card:hover{
+  height: 760rpx;
+
+}
+.container .card .imgBx{
+  position: relative;
+  width: 260rpx;
+  height: 4100rpx;
+  top: -10rpx;
+  left: -10rpx;
+  box-shadow: 0 5rpx 20rpx rgba(0, 0, 0, 0.2);
+}
+.container .card .imgBx image{
+  max-width: 160%;
+  border-radius: 15rpx;
+
+}
+.container .card .content{
+  position: relative;
+  margin-top: -10rpx;
+  padding: 10rpx 15rpx;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.container .card:hover .content{
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40rpx;
+  transition-delay: 0.3s;
+}

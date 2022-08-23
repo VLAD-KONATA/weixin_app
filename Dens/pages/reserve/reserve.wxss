@@ -1,0 +1,63 @@
+/* pages/reserve/reserve.wxss */
+
+.cu-avatar.lg {
+  width: 180rpx;
+  height: 180rpx;
+  font-size: 2em;
+}
+/* .cu-list.menu-avatar>.cu-item {
+  position: relative;
+  display: flex;
+  padding-right: 10rpx;
+  height: 140rpx;
+  background-color: var(--white);
+  justify-content: flex-end;
+  align-items: center;
+} */
+.cu-list.menu-avatar>.cu-item .mei .content {
+  position: absolute;
+  left: 240rpx;
+  width: calc(100% - 96rpx - 60rpx - 120rpx - 30rpx);
+  line-height: 1.4em;
+}
+.cu-list.menu-avatar>.cu-item>.mei {
+  position: relative;
+  display: flex;
+  padding-right: 10rpx;
+  margin-left: 15rpx;
+  height: 300rpx;
+  width: 94%;
+  background-color: var(--white);
+  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
+}
+.cu-list.menu-avatar>.cu-item>.mei>.cu-avatar {
+  position: absolute;
+  left: 30rpx;
+  border-radius: 15rpx;
+  box-shadow: 5rpx 5rpx 5rpx #c3c7c7;
+}
+.head{
+  height: 113rpx;
+  box-shadow: 5rpx 5rpx 5rpx #8acaca 0.5;
+}
+.padding{
+  text-align: center;
+  
+}
+.text-cut{
+  font-size: 25rpx;
+}
+page{
+  background-color: var(--white);
+}
+.gs{
+  height: 40rpx;
+  overflow: hidden;
+}
+.gs van-cell{
+  background-color: rgb(247, 252, 252);
+}
+
+

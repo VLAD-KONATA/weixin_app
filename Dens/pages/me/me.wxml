@@ -1,0 +1,85 @@
+<view class="view_contain">
+  <!-- 第一部分 -->
+  <view class="view_1">
+    <view class="view_image_text">
+      <!-- <image class="image_radius" src="../images/timg.png" /> -->
+      <view class="ps" style="width: 230rpx; height: 230rpx;">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+    
+      <view style="position: relative; width: 188rpx; height: 46rpx; left: 58rpx; top: -125rpx; display: block; box-sizing: border-box; font-style: oblique; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: small">
+        <text>昵称：张之洞</text>
+      </view>
+    
+    
+      <view style="position: relative; width: 64rpx; height: 46rpx; display: block; box-sizing: border-box; left: 324rpx; top: -296rpx">
+        <van-icon name="setting" bindtap="setting"/>
+      </view>
+    </view>
+  </view>
+  <!-- 第二部分 -->
+  <view class="view_2" style="width: 750rpx; height: 192rpx; display: flex; box-sizing: border-box">
+    <view class="view_tupianwenzi">
+    <view>
+      <van-icon name="column" size="30px"/>
+    </view>
+      <text class="text_saoyisao">挂号</text>
+    </view>
+    <view class="view_tupianwenzi">
+      <view>
+        <van-icon name="manager" size="30px"/>
+      </view>
+      <text class="text_saoyisao">问诊</text>
+    </view>
+    <view class="view_tupianwenzi">
+      <view>
+        <van-icon name="good-job" size="30px"/>
+      </view>
+      <text class="text_saoyisao">答题</text>
+    </view>
+    <view class="view_tupianwenzi">
+    <view>
+      <van-icon name="todo-list" size="30px"/>
+    </view>
+      <text class="text_saoyisao">处方</text>
+    </view>
+
+  </view>
+  <!-- 第三部分 -->
+  <view class="view_3">
+    <view class="list-item" style="height: 88rpx;">
+      <van-cell icon="star-o">我的医生</van-cell>
+      <!-- <text class="item-text">我的医生</text> -->
+      
+    </view>
+    <view class="line"></view>
+    <view class="list-item" style="height: 88rpx;">
+      <van-cell icon="comment-circle-o">意见反馈</van-cell>
+      <!-- <text class="item-text">意见反馈</text> -->
+     
+    </view>
+    <view class="line"></view>
+    <view class="list-item" style="height: 88rpx;">
+      <van-cell icon="more-o">隐私条款</van-cell>
+      <!-- <text class="item-text">版本更新</text> -->
+      
+    </view>
+    <view class="line"></view>
+    <view class="list-item" style="height: 88rpx;">
+      <van-cell icon="diamond-o">我的会员</van-cell>
+      <!-- <text class="item-text">售后记录</text> -->
+      
+    </view>
+    <view class="line"></view>
+    <view class="list-item" style="height: 88rpx;">
+      <van-cell icon="share-o">分享邀请</van-cell>
+      <!-- <text class="item-text">分享邀请</text> -->
+      
+    </view>
+
+    <view style="text-align: center;margin-top: 40rpx;">
+      <van-button type="primary" color="#363636">退出登录</van-button>
+    </view>
+    <view class="line"></view>
+  </view>
+</view>

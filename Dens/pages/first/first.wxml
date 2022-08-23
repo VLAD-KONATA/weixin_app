@@ -1,0 +1,33 @@
+<!--pages/first.wxml-->
+<!-- <van-tabs active="{{ active }}" bind:change="onChange">
+  <van-tab title="新闻咨询">
+    <view style="height:20rpx"></view>
+
+    <rich-text class="heading">
+    <text>Sticky Story</text>
+    </rich-text>
+    <rich-text class="heading"><text>The end</text></rich-text>
+  </van-tab>
+  <van-tab title="口腔小知识">内容 2</van-tab>
+  <van-tab title="科普小视频">内容 3</van-tab>
+  <van-tab title="口腔小史">内容 4</van-tab>
+</van-tabs> -->
+<view style="height: 20rpx;"></view>
+<view class="cu-list menu-avatar padding-top-xs">
+  <view class="cu-item " wx:for="{{herolist}}" we:key="Id">
+    <view class="cu-avatar radius lg" style="background-image: url({{item.Img}}); position: absolute; left: 29rpx; top: 90rpx; width: 646rpx; height: 191rpx; display: block; box-sizing: border-box" bindtap="moreknow"></view>
+    <!-- <view class="content">
+        <view>
+          <text class="text-cut">{{item.Name}}</text>
+        </view>
+        <view class="text-gray text-sm flex">
+          <text class="text-cut">{{item.Position}}</text>
+        </view>
+        <view class="text-gray text-sm flex">
+          <text class="text-cut">{{item.Introduce}}</text>
+        </view>
+      </view> -->
+  
+    <view style="position: relative; width: 646rpx; height: 66rpx; display: block; box-sizing: border-box; left: -1rpx; top: -93rpx" bindtap="moreknow">牙菌斑会引起哪些危害</view>
+  </view>
+</view>

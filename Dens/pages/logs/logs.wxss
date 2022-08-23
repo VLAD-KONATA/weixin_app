@@ -1,0 +1,102 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+.bgc{
+  background-color: #E1E0E5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.chat-container{
+  padding-bottom: 110rpx;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.chat-item {
+  display: flex;
+  padding: 20rpx 0;
+}
+.avatar {
+  width: 120rpx;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+}
+.avatar image {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 10rpx;
+}
+.msg-box{
+  padding: 0 10rpx;
+}
+.content-box{
+  background-color: #fff;
+  padding: 15rpx 20rpx;
+  border-radius: 5rpx;
+  margin-top: 10rpx;
+  position: relative;
+  max-width: 400rpx;
+}
+.content-box::before{
+  content: "";
+  background-color: white;
+  height: 25rpx;
+  width: 25rpx;
+  position: absolute;
+  left: -8rpx;
+  top: 22rpx;
+  transform: rotate(45deg);
+}
+.msg-content image{
+  max-width: 400rpx;
+  border-radius: 10rpx;
+}
+.send-msg-container{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  background-color: #f7f7f7;
+  height: 110rpx;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 10rpx;
+}
+.input{
+  background-color: #f7f7f7;
+  flex-grow: 1;
+  margin: 0 10rpx;
+  height: 68rpx;
+  border-radius: 10rpx;
+  padding: 0 15rpx;
+  box-sizing: border-box;
+}
+.action-box .icon{
+  font-size: 55rpx;
+  color: #282828;
+}
+.action-box .send-btn .van-button{
+  height: 60rpx;
+  margin-left: 14rpx;
+}
+.my-msg{
+  flex-direction: row-reverse;
+}
+view{
+  word-break: break-all;
+}
+.my-msg .content-box::before{
+  left: auto;
+  right: -8rpx;
+}
+

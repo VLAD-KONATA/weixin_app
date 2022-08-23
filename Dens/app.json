@@ -1,0 +1,56 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/first/first",
+    "pages/me/me",
+    "pages/reserve/reserve",
+    "pages/Doctor/Doctor"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath":"/image/首页.png",
+      "selectedIconPath":"/image/首页.png"
+    },{
+      "pagePath": "pages/first/first",
+      "text": "小科普",
+      "iconPath": "/image/电力科普.png",
+      "selectedIconPath": "/image/电力科普.png"
+    },{
+      "pagePath": "pages/logs/logs",
+      "text": "互动中心",
+      "iconPath": "/image/咨询.png",
+      "selectedIconPath": "/image/咨询.png"
+    },{
+      "pagePath": "pages/me/me",
+      "text": "个人中心",
+      "iconPath": "/image/个人.png",
+      "selectedIconPath": "/image/个人.png"
+    }],
+    "color": "#000000",
+    "selectedColor": "#d7bf00"
+  },
+  "usingComponents": {
+    "van-circle": "/miniprogram_npm/@vant/weapp/circle/index",
+    "van-tabber-item": "/miniprogram_npm/@vant/weapp/tabbar-item/index",
+    "van-cell": "/miniprogram_npm/@vant/weapp/cell/index",
+    "van-tabber": "/miniprogram_npm/@vant/weapp/tabbar/index",
+    "van-icon": "/miniprogram_npm/@vant/weapp/icon/index",
+    "van-calender":"/miniprogram_npm/@vant/weapp/calendar/index",
+    "van-popup":"/miniprogram_npm/@vant/weapp/popup/index",
+    "van-button":"/miniprogram_npm/@vant/weapp/button/index",
+    "van-tabs":"/miniprogram_npm/@vant/weapp/tabs/index",
+    "van-tab":"/miniprogram_npm/@vant/weapp/tab/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

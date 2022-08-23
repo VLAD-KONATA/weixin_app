@@ -1,0 +1,38 @@
+<!--logs.wxml-->
+<van-tabs active="{{ active }}" bind:change="onChange">
+  <van-tab title="问诊咨询">
+    <view>
+      <view class="bgc"></view>
+      <view wx:if="{{isLoading}}">网络连接中...</view>
+      <scroll-view class="chat-container" scroll-y scroll-into-view="{{'k'+list[list.length-1].id}}">
+
+        <view class="chat-item {{username == item.from?'my_msg':'ns'}}" wx:for="{{list}}" id="{{'k'+item.id}}">
+          <view class="avatar">
+            <image src="{{item.avatar}}">
+            </image>
+          </view>
+          <view class="msg-box">
+            <view class="nickname" wx:if="{{username!=item.from}}">
+              {{item.nickname}}
+            </view>
+            <view wx:if="{{item.type==1}}" class="content-box">
+              {{item.content}}
+            </view>
+            <view wx:elif="{{item.type==2}}" class="img-content">
+              <image src="{{item.content}}" mode="widthFix"></image>
+            </view>
+          </view>
+        </view>
+
+      </scroll-view>
+      <view class="send-msg-container">
+        <input class="input" type="text" model:value="{{value}}"/>
+        <view class="action-box">
+          <van-icon name="smile-o" class="icon" bind:tap="sendImg"/>
+          <van-button class="send-btn" square type="primary" bind:tap="sendMsg"></van-button>
+        </view>
+      </view>
+    </view>
+  </van-tab>
+  <van-tab title="口腔聊天室"></van-tab>
+</van-tabs>
