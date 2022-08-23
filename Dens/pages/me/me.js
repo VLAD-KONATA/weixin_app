@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    name:""
 
   },
 
@@ -16,7 +17,16 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    //测试接口用
+    wx.request({
+      url: 'http://127.0.0.1:8000/users/1',
+      data:{name:this.data.UName},
+      method:'GET',
+      success: function(res){
+        
+        console.log(res)
+    },
+    })
   },
 
   /**
