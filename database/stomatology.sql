@@ -11,7 +11,7 @@
  Target Server Version : 100421
  File Encoding         : 65001
 
- Date: 22/08/2022 20:53:09
+ Date: 23/08/2022 21:54:16
 */
 
 SET NAMES utf8mb4;
@@ -39,7 +39,7 @@ CREATE TABLE `appointment`  (
 -- ----------------------------
 -- Records of appointment
 -- ----------------------------
-INSERT INTO `appointment` VALUES (1, 1, 1, '2022-04-25 1', '', 1, NULL);
+INSERT INTO `appointment` VALUES (1, 1, 1, '202208222030', '20220822050007', 1, '牙歪了');
 
 -- ----------------------------
 -- Table structure for article
@@ -81,7 +81,7 @@ CREATE TABLE `doctor`  (
 -- ----------------------------
 -- Records of doctor
 -- ----------------------------
-INSERT INTO `doctor` VALUES (1, '医生A', '男', 25, '11111111111', '实习医生', 0);
+INSERT INTO `doctor` VALUES (1, '医生A', '男', 25, '11111111111', '上海工地大学', 2);
 
 -- ----------------------------
 -- Table structure for payment
@@ -105,6 +105,7 @@ CREATE TABLE `payment`  (
 -- ----------------------------
 -- Records of payment
 -- ----------------------------
+INSERT INTO `payment` VALUES (1, 1, 1, '20220822212059', 12008.50, 2, '整牙费用');
 
 -- ----------------------------
 -- Table structure for user
@@ -118,11 +119,12 @@ CREATE TABLE `user`  (
   `UTel` varchar(11) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '联系方式',
   `UAddress` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '住址',
   PRIMARY KEY (`UID`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES (1, '用户A', '男', 25, NULL, NULL);
+INSERT INTO `user` VALUES (1, '用户A', '男', 25, '11111111111', '上海工地大学');
+INSERT INTO `user` VALUES (2, '用户B', '女', 20, '11122233344', '上海理工大学');
 
 SET FOREIGN_KEY_CHECKS = 1;
