@@ -12,6 +12,8 @@
     |--Dens   #微信小程序前端（me.js里为了测试接口代码添加了一些东西）
 
     |--api    #微信小程序后端（python——FastApi）
+    
+        |-requirement.txt   #需要安装的第三方库
 
         |--env   #虚拟环境（目前安装了Django，FastApi，sqlalchemy，pymysql)
 
@@ -33,7 +35,7 @@
 
 1、database中找到stomatology.sql，导入到mysql中
 
-2、vscode打开api文件夹，终端env/Scripts/Activate（注意解释器路径为..\weixin_app\api\env\Scripts\python.exe）
+2、vscode打开api文件夹，终端pip install -r requirements.txt,env/Scripts/Activate（注意解释器路径为..\weixin_app\api\env\Scripts\python.exe）
 
 3、进入env虚拟环境，run main.py，可以测试一下 http://127.0.0.1:8000/users/1 和 http://127.0.0.1:8000/users/2 是否和数据库user表内数据对应
 
