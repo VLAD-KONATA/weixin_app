@@ -8,7 +8,11 @@ class UserCreate(BaseModel):
     email:
     password:
     """
-    password: str
+    UName :str
+    USex :str="男"
+    UAge :int=None
+    UTel :str=None
+    UAddress :str=None
 
 
 class User(BaseModel):

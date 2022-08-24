@@ -11,7 +11,7 @@
  Target Server Version : 100421
  File Encoding         : 65001
 
- Date: 23/08/2022 21:54:16
+ Date: 24/08/2022 19:02:48
 */
 
 SET NAMES utf8mb4;
@@ -76,12 +76,16 @@ CREATE TABLE `doctor`  (
   `DAddress` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '住址',
   `DField` int(2) NOT NULL COMMENT '工作领域（0：洗牙，1：牙齿矫正，2：补牙，3：牙齿疾病综合）',
   PRIMARY KEY (`DID`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 6 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of doctor
 -- ----------------------------
 INSERT INTO `doctor` VALUES (1, '医生A', '男', 25, '11111111111', '上海工地大学', 2);
+INSERT INTO `doctor` VALUES (2, '医生B', '男', 25, '12345678910', '上海理工大学', 3);
+INSERT INTO `doctor` VALUES (3, '医生C', '女', 22, '12345678901', 'USST', 1);
+INSERT INTO `doctor` VALUES (4, '医生D', '女', 18, '98765432109', '上海施工大学', 0);
+INSERT INTO `doctor` VALUES (5, '医生E', '男', 20, '98765432109', '上海理面总是施工大学', 0);
 
 -- ----------------------------
 -- Table structure for payment

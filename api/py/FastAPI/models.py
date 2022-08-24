@@ -1,5 +1,5 @@
 from email.policy import default
-from sqlalchemy import ForeignKey, Column, Integer, String
+from sqlalchemy import ForeignKey, Column, Integer, String, FLOAT
 from database import Base
 
 
@@ -30,4 +30,14 @@ class Appointment(Base):
     ApTime = Column(String(12),nullable=False)
     ApSubmitTime = Column(String(16),nullable=False)
     ApStatus = Column(Integer,nullable=False)
+    Remark=Column(String(255))
+
+class Payment(Base):
+    __tablename__ = "payment"
+    PID = Column(Integer, primary_key=True, index=True,autoincrement=True)
+    DID = Column(Integer, ForeignKey('doctor.DID',ondelete='NO ACTION'))
+    UID = Column(Integer,ForeignKey('user.UID',ondelete="NO ACTION"))
+    PSubmitTime = Column(String(16),nullable=False)
+    PAmount = Column(FLOAT(),nullable=False)
+    PStatus = Column(Integer,nullable=False)
     Remark=Column(String(255))
