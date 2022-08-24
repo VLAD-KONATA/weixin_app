@@ -42,7 +42,7 @@ def get_usersbyUName(UName: str, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="User not found")
     return db_user
 
-# 创建用户
+# 创建用户（post注意编写请求头）
 @app.post("/create_user/", response_model=schemas.User)
 def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
     return crud.create_user(db=db, user=user)

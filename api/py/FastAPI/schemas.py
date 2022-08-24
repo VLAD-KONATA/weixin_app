@@ -5,8 +5,7 @@ from pydantic import BaseModel
 class UserCreate(BaseModel):
     """
     请求模型验证：
-    email:
-    password:
+    UName:str
     """
     UName :str
     USex :str="男"
